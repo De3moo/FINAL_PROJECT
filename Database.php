@@ -3,7 +3,7 @@
 $servername = "localhost:3306"; // e.g., "localhost" or "127.0.0.1"
 $username = "root"; // your MySQL username
 $password = ""; // your MySQL password
-$database = "journalentries"; // your MySQL database name
+$database = "diary"; // your MySQL database name
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);

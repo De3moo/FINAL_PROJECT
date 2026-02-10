@@ -1,6 +1,7 @@
 -- Database: diary
 -- Created for Diaryhea Journal Application
 -- Import this file into phpMyAdmin
+-- This is a unified database containing both users and journal entries
 
 -- --------------------------------------------------------
 
@@ -21,14 +22,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 -- --------------------------------------------------------
 
--- Database: journalentries
--- Create Database
-
-CREATE DATABASE IF NOT EXISTS `journalentries` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `journalentries`;
-
--- --------------------------------------------------------
-
 -- Table structure for table `entries`
 
 CREATE TABLE IF NOT EXISTS `entries` (
@@ -43,8 +36,7 @@ CREATE TABLE IF NOT EXISTS `entries` (
 
 -- --------------------------------------------------------
 
--- Sample data for users table (optional - remove if not needed)
--- INSERT INTO `diary`.`users` (`email`, `password`) VALUES
--- ('user@example.com', 'password123');
+-- Sample data (optional - remove if not needed)
+-- INSERT INTO `users` (`email`, `password`) VALUES ('user@example.com', 'password123');
 
 -- --------------------------------------------------------

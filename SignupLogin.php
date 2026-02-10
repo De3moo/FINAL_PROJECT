@@ -9,8 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $errors = array();
   
     
-      // Establish database connection if not already done in Database.php
-      $conn = mysqli_connect("localhost", "root", "", "diary");
+    // Database connection is now handled by Database.php
 
 if (!empty($email) && !empty($password)) {
 
