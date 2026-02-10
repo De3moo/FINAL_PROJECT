@@ -1,14 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "james";
-$password = "james";
-$dbname = "journalentries";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include("Database.php");
 
 $message = ""; // Initialize the message variable
 

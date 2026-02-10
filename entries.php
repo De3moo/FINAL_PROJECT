@@ -1,17 +1,6 @@
 
 <?php
-$servername = "localhost";
-$username = "james";
-$password = "james";
-$dbname = "journalentries";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include("Database.php");
 
 // SQL query to fetch entries along with image data from the "entries" table
 $sql = "SELECT Time, Title, entries, imageName, imagePath, Time FROM entries ORDER BY Time DESC LIMIT 5";
